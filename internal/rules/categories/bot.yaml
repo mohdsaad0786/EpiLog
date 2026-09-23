@@ -1,0 +1,320 @@
+- id: "bot-001"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 001 in user_agent"
+  literal: "headlesschrome"
+  targets: ["user_agent"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-002"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 002 in headers"
+  literal: "headlesschrome"
+  targets: ["headers"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-003"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 003 in body"
+  literal: "headlesschrome"
+  targets: ["body"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-004"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 004 in query"
+  literal: "headlesschrome"
+  targets: ["query"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-005"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 005 in user_agent"
+  literal: "phantomjs"
+  targets: ["user_agent"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-006"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 006 in headers"
+  literal: "phantomjs"
+  targets: ["headers"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-007"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 007 in body"
+  literal: "phantomjs"
+  targets: ["body"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-008"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 008 in query"
+  literal: "phantomjs"
+  targets: ["query"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-009"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 009 in user_agent"
+  literal: "python-requests"
+  targets: ["user_agent"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-010"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 010 in headers"
+  literal: "python-requests"
+  targets: ["headers"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-011"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 011 in body"
+  literal: "python-requests"
+  targets: ["body"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-012"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 012 in query"
+  literal: "python-requests"
+  targets: ["query"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-013"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 013 in user_agent"
+  literal: "curl/"
+  targets: ["user_agent"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-014"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 014 in headers"
+  literal: "curl/"
+  targets: ["headers"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-015"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 015 in body"
+  literal: "curl/"
+  targets: ["body"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-016"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 016 in query"
+  literal: "curl/"
+  targets: ["query"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-017"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 017 in user_agent"
+  literal: "scrapy"
+  targets: ["user_agent"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-018"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 018 in headers"
+  literal: "scrapy"
+  targets: ["headers"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-019"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 019 in body"
+  literal: "scrapy"
+  targets: ["body"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-020"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 020 in query"
+  literal: "scrapy"
+  targets: ["query"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-021"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 021 in user_agent"
+  literal: "selenium"
+  targets: ["user_agent"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-022"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 022 in headers"
+  literal: "selenium"
+  targets: ["headers"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-023"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 023 in body"
+  literal: "selenium"
+  targets: ["body"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-024"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 024 in query"
+  literal: "selenium"
+  targets: ["query"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-025"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 025 in user_agent"
+  literal: "bytespider"
+  targets: ["user_agent"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-026"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 026 in headers"
+  literal: "bytespider"
+  targets: ["headers"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-027"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 027 in body"
+  literal: "bytespider"
+  targets: ["body"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-028"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 028 in query"
+  literal: "bytespider"
+  targets: ["query"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-029"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 029 in user_agent"
+  literal: "ahrefsbot"
+  targets: ["user_agent"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-030"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 030 in headers"
+  literal: "ahrefsbot"
+  targets: ["headers"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-031"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 031 in body"
+  literal: "ahrefsbot"
+  targets: ["body"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-032"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 032 in query"
+  literal: "ahrefsbot"
+  targets: ["query"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-033"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 033 in user_agent"
+  literal: "dotbot"
+  targets: ["user_agent"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-034"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 034 in headers"
+  literal: "dotbot"
+  targets: ["headers"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-035"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 035 in body"
+  literal: "dotbot"
+  targets: ["body"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-036"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 036 in query"
+  literal: "dotbot"
+  targets: ["query"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-037"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 037 in user_agent"
+  literal: "facebookexternalhit"
+  targets: ["user_agent"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-038"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 038 in headers"
+  literal: "facebookexternalhit"
+  targets: ["headers"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-039"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 039 in body"
+  literal: "facebookexternalhit"
+  targets: ["body"]
+  action: "log"
+  tags: ["bot"]
+- id: "bot-040"
+  category: "bot"
+  severity: "low"
+  description: "BOT signature 040 in query"
+  literal: "facebookexternalhit"
+  targets: ["query"]
+  action: "log"
+  tags: ["bot"]

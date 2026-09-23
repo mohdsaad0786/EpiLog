@@ -1,0 +1,19 @@
+listen: 127.0.0.1:8080
+dashboard: 127.0.0.1:9090
+upstream: http://127.0.0.1:3000
+database: bhai-waf.db
+max_body_bytes: 1048576
+rate_limit:
+  rate: 10
+  burst: 30
+story:
+  enabled: true
+  window: 5m
+  retention: 720h
+  auto_block_threshold: 86
+  auto_block_duration: 24h
+threat:
+  tor_url: https://check.torproject.org/torbulkexitlist
+  vpn_cidrs: []
+challenge:
+  difficulty: 4

@@ -1,0 +1,640 @@
+- id: "xss-001"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 001 in query"
+  pattern: "(?i)<script\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-002"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 002 in body"
+  pattern: "(?i)<script\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-003"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 003 in headers"
+  pattern: "(?i)<script\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-004"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 004 in path"
+  pattern: "(?i)<script\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-005"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 005 in query"
+  pattern: "(?i)</script\\s*>"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-006"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 006 in body"
+  pattern: "(?i)</script\\s*>"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-007"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 007 in headers"
+  pattern: "(?i)</script\\s*>"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-008"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 008 in path"
+  pattern: "(?i)</script\\s*>"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-009"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 009 in query"
+  pattern: "(?i)\\bonerror\\s*="
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-010"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 010 in body"
+  pattern: "(?i)\\bonerror\\s*="
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-011"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 011 in headers"
+  pattern: "(?i)\\bonerror\\s*="
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-012"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 012 in path"
+  pattern: "(?i)\\bonerror\\s*="
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-013"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 013 in query"
+  pattern: "(?i)\\bonload\\s*="
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-014"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 014 in body"
+  pattern: "(?i)\\bonload\\s*="
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-015"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 015 in headers"
+  pattern: "(?i)\\bonload\\s*="
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-016"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 016 in path"
+  pattern: "(?i)\\bonload\\s*="
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-017"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 017 in query"
+  pattern: "(?i)javascript\\s*:"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-018"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 018 in body"
+  pattern: "(?i)javascript\\s*:"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-019"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 019 in headers"
+  pattern: "(?i)javascript\\s*:"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-020"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 020 in path"
+  pattern: "(?i)javascript\\s*:"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-021"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 021 in query"
+  pattern: "(?i)<svg\\b[^>]*\\bonload"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-022"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 022 in body"
+  pattern: "(?i)<svg\\b[^>]*\\bonload"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-023"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 023 in headers"
+  pattern: "(?i)<svg\\b[^>]*\\bonload"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-024"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 024 in path"
+  pattern: "(?i)<svg\\b[^>]*\\bonload"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-025"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 025 in query"
+  pattern: "(?i)<img\\b[^>]*\\bonerror"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-026"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 026 in body"
+  pattern: "(?i)<img\\b[^>]*\\bonerror"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-027"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 027 in headers"
+  pattern: "(?i)<img\\b[^>]*\\bonerror"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-028"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 028 in path"
+  pattern: "(?i)<img\\b[^>]*\\bonerror"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-029"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 029 in query"
+  pattern: "(?i)<iframe\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-030"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 030 in body"
+  pattern: "(?i)<iframe\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-031"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 031 in headers"
+  pattern: "(?i)<iframe\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-032"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 032 in path"
+  pattern: "(?i)<iframe\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-033"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 033 in query"
+  pattern: "(?i)<object\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-034"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 034 in body"
+  pattern: "(?i)<object\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-035"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 035 in headers"
+  pattern: "(?i)<object\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-036"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 036 in path"
+  pattern: "(?i)<object\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-037"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 037 in query"
+  pattern: "(?i)<embed\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-038"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 038 in body"
+  pattern: "(?i)<embed\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-039"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 039 in headers"
+  pattern: "(?i)<embed\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-040"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 040 in path"
+  pattern: "(?i)<embed\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-041"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 041 in query"
+  pattern: "(?i)<math\\b[^>]*\\bhref"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-042"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 042 in body"
+  pattern: "(?i)<math\\b[^>]*\\bhref"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-043"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 043 in headers"
+  pattern: "(?i)<math\\b[^>]*\\bhref"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-044"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 044 in path"
+  pattern: "(?i)<math\\b[^>]*\\bhref"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-045"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 045 in query"
+  pattern: "(?i)<body\\b[^>]*\\bonload"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-046"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 046 in body"
+  pattern: "(?i)<body\\b[^>]*\\bonload"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-047"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 047 in headers"
+  pattern: "(?i)<body\\b[^>]*\\bonload"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-048"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 048 in path"
+  pattern: "(?i)<body\\b[^>]*\\bonload"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-049"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 049 in query"
+  pattern: "(?i)<details\\b[^>]*\\bontoggle"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-050"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 050 in body"
+  pattern: "(?i)<details\\b[^>]*\\bontoggle"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-051"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 051 in headers"
+  pattern: "(?i)<details\\b[^>]*\\bontoggle"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-052"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 052 in path"
+  pattern: "(?i)<details\\b[^>]*\\bontoggle"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-053"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 053 in query"
+  pattern: "(?i)\\bonmouseover\\s*="
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-054"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 054 in body"
+  pattern: "(?i)\\bonmouseover\\s*="
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-055"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 055 in headers"
+  pattern: "(?i)\\bonmouseover\\s*="
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-056"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 056 in path"
+  pattern: "(?i)\\bonmouseover\\s*="
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-057"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 057 in query"
+  pattern: "(?i)\\bonfocus\\s*="
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-058"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 058 in body"
+  pattern: "(?i)\\bonfocus\\s*="
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-059"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 059 in headers"
+  pattern: "(?i)\\bonfocus\\s*="
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-060"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 060 in path"
+  pattern: "(?i)\\bonfocus\\s*="
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-061"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 061 in query"
+  pattern: "(?i)\\bautofocus\\b[^>]*\\bonfocus"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-062"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 062 in body"
+  pattern: "(?i)\\bautofocus\\b[^>]*\\bonfocus"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-063"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 063 in headers"
+  pattern: "(?i)\\bautofocus\\b[^>]*\\bonfocus"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-064"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 064 in path"
+  pattern: "(?i)\\bautofocus\\b[^>]*\\bonfocus"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-065"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 065 in query"
+  pattern: "(?i)\\bsrcdoc\\s*="
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-066"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 066 in body"
+  pattern: "(?i)\\bsrcdoc\\s*="
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-067"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 067 in headers"
+  pattern: "(?i)\\bsrcdoc\\s*="
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-068"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 068 in path"
+  pattern: "(?i)\\bsrcdoc\\s*="
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-069"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 069 in query"
+  pattern: "(?i)data\\s*:\\s*text/html"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-070"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 070 in body"
+  pattern: "(?i)data\\s*:\\s*text/html"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-071"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 071 in headers"
+  pattern: "(?i)data\\s*:\\s*text/html"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-072"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 072 in path"
+  pattern: "(?i)data\\s*:\\s*text/html"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-073"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 073 in query"
+  pattern: "(?i)(?:alert|prompt|confirm)\\s*\\("
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-074"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 074 in body"
+  pattern: "(?i)(?:alert|prompt|confirm)\\s*\\("
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-075"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 075 in headers"
+  pattern: "(?i)(?:alert|prompt|confirm)\\s*\\("
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-076"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 076 in path"
+  pattern: "(?i)(?:alert|prompt|confirm)\\s*\\("
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-077"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 077 in query"
+  pattern: "(?i)document\\s*\\.\\s*(?:cookie|location|write)"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-078"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 078 in body"
+  pattern: "(?i)document\\s*\\.\\s*(?:cookie|location|write)"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-079"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 079 in headers"
+  pattern: "(?i)document\\s*\\.\\s*(?:cookie|location|write)"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "xss-080"
+  category: "xss"
+  severity: "high"
+  description: "XSS signature 080 in path"
+  pattern: "(?i)document\\s*\\.\\s*(?:cookie|location|write)"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]

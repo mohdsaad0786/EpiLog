@@ -1,0 +1,240 @@
+- id: "xxe-001"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 001 in body"
+  pattern: "(?i)<!DOCTYPE\\s+[^>]*\\["
+  targets: ["body"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-002"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 002 in query"
+  pattern: "(?i)<!DOCTYPE\\s+[^>]*\\["
+  targets: ["query"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-003"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 003 in headers"
+  pattern: "(?i)<!DOCTYPE\\s+[^>]*\\["
+  targets: ["headers"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-004"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 004 in body"
+  pattern: "(?i)<!ENTITY\\s+\\w+\\s+SYSTEM"
+  targets: ["body"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-005"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 005 in query"
+  pattern: "(?i)<!ENTITY\\s+\\w+\\s+SYSTEM"
+  targets: ["query"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-006"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 006 in headers"
+  pattern: "(?i)<!ENTITY\\s+\\w+\\s+SYSTEM"
+  targets: ["headers"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-007"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 007 in body"
+  pattern: "(?i)<!ENTITY\\s+%\\s+\\w+"
+  targets: ["body"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-008"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 008 in query"
+  pattern: "(?i)<!ENTITY\\s+%\\s+\\w+"
+  targets: ["query"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-009"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 009 in headers"
+  pattern: "(?i)<!ENTITY\\s+%\\s+\\w+"
+  targets: ["headers"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-010"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 010 in body"
+  pattern: "(?i)\\bSYSTEM\\s+['\\\"](?:file|http|ftp)://"
+  targets: ["body"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-011"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 011 in query"
+  pattern: "(?i)\\bSYSTEM\\s+['\\\"](?:file|http|ftp)://"
+  targets: ["query"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-012"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 012 in headers"
+  pattern: "(?i)\\bSYSTEM\\s+['\\\"](?:file|http|ftp)://"
+  targets: ["headers"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-013"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 013 in body"
+  pattern: "(?i)\\bPUBLIC\\s+['\\\"][^'\\\"]+['\\\"]"
+  targets: ["body"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-014"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 014 in query"
+  pattern: "(?i)\\bPUBLIC\\s+['\\\"][^'\\\"]+['\\\"]"
+  targets: ["query"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-015"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 015 in headers"
+  pattern: "(?i)\\bPUBLIC\\s+['\\\"][^'\\\"]+['\\\"]"
+  targets: ["headers"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-016"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 016 in body"
+  pattern: "(?i)\\bxinclude\\s*:"
+  targets: ["body"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-017"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 017 in query"
+  pattern: "(?i)\\bxinclude\\s*:"
+  targets: ["query"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-018"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 018 in headers"
+  pattern: "(?i)\\bxinclude\\s*:"
+  targets: ["headers"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-019"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 019 in body"
+  pattern: "(?i)<xi:include\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-020"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 020 in query"
+  pattern: "(?i)<xi:include\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-021"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 021 in headers"
+  pattern: "(?i)<xi:include\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-022"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 022 in body"
+  pattern: "(?i)<!ENTITY\\s+\\w+\\s+['\\\"]&"
+  targets: ["body"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-023"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 023 in query"
+  pattern: "(?i)<!ENTITY\\s+\\w+\\s+['\\\"]&"
+  targets: ["query"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-024"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 024 in headers"
+  pattern: "(?i)<!ENTITY\\s+\\w+\\s+['\\\"]&"
+  targets: ["headers"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-025"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 025 in body"
+  pattern: "(?i)(?:php://filter|/etc/passwd).*<!ENTITY"
+  targets: ["body"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-026"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 026 in query"
+  pattern: "(?i)(?:php://filter|/etc/passwd).*<!ENTITY"
+  targets: ["query"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-027"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 027 in headers"
+  pattern: "(?i)(?:php://filter|/etc/passwd).*<!ENTITY"
+  targets: ["headers"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-028"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 028 in body"
+  pattern: "(?i)<!DOCTYPE\\s+[^>]*SYSTEM"
+  targets: ["body"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-029"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 029 in query"
+  pattern: "(?i)<!DOCTYPE\\s+[^>]*SYSTEM"
+  targets: ["query"]
+  action: "block"
+  tags: ["xxe"]
+- id: "xxe-030"
+  category: "xxe"
+  severity: "critical"
+  description: "XXE signature 030 in headers"
+  pattern: "(?i)<!DOCTYPE\\s+[^>]*SYSTEM"
+  targets: ["headers"]
+  action: "block"
+  tags: ["xxe"]
