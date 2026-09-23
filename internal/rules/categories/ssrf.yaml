@@ -1,0 +1,320 @@
+- id: "ssrf-001"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 001 in query"
+  pattern: "(?i)(?:169\\.254\\.169\\.254|metadata\\.google\\.internal)"
+  targets: ["query"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-002"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 002 in body"
+  pattern: "(?i)(?:169\\.254\\.169\\.254|metadata\\.google\\.internal)"
+  targets: ["body"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-003"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 003 in headers"
+  pattern: "(?i)(?:169\\.254\\.169\\.254|metadata\\.google\\.internal)"
+  targets: ["headers"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-004"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 004 in path"
+  pattern: "(?i)(?:169\\.254\\.169\\.254|metadata\\.google\\.internal)"
+  targets: ["path"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-005"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 005 in query"
+  pattern: "(?i)(?:localhost|127\\.0\\.0\\.1|\\[::1\\])[:/]"
+  targets: ["query"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-006"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 006 in body"
+  pattern: "(?i)(?:localhost|127\\.0\\.0\\.1|\\[::1\\])[:/]"
+  targets: ["body"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-007"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 007 in headers"
+  pattern: "(?i)(?:localhost|127\\.0\\.0\\.1|\\[::1\\])[:/]"
+  targets: ["headers"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-008"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 008 in path"
+  pattern: "(?i)(?:localhost|127\\.0\\.0\\.1|\\[::1\\])[:/]"
+  targets: ["path"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-009"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 009 in query"
+  pattern: "(?i)(?:0x7f000001|2130706433|017700000001)"
+  targets: ["query"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-010"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 010 in body"
+  pattern: "(?i)(?:0x7f000001|2130706433|017700000001)"
+  targets: ["body"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-011"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 011 in headers"
+  pattern: "(?i)(?:0x7f000001|2130706433|017700000001)"
+  targets: ["headers"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-012"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 012 in path"
+  pattern: "(?i)(?:0x7f000001|2130706433|017700000001)"
+  targets: ["path"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-013"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 013 in query"
+  pattern: "(?i)(?:file|gopher|dict|ftp)://"
+  targets: ["query"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-014"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 014 in body"
+  pattern: "(?i)(?:file|gopher|dict|ftp)://"
+  targets: ["body"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-015"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 015 in headers"
+  pattern: "(?i)(?:file|gopher|dict|ftp)://"
+  targets: ["headers"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-016"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 016 in path"
+  pattern: "(?i)(?:file|gopher|dict|ftp)://"
+  targets: ["path"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-017"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 017 in query"
+  pattern: "(?i)(?:metadata/identity/oauth2/token|latest/meta-data/)"
+  targets: ["query"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-018"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 018 in body"
+  pattern: "(?i)(?:metadata/identity/oauth2/token|latest/meta-data/)"
+  targets: ["body"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-019"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 019 in headers"
+  pattern: "(?i)(?:metadata/identity/oauth2/token|latest/meta-data/)"
+  targets: ["headers"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-020"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 020 in path"
+  pattern: "(?i)(?:metadata/identity/oauth2/token|latest/meta-data/)"
+  targets: ["path"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-021"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 021 in query"
+  pattern: "(?i)(?:100\\.100\\.100\\.200|169\\.254\\.170\\.2)"
+  targets: ["query"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-022"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 022 in body"
+  pattern: "(?i)(?:100\\.100\\.100\\.200|169\\.254\\.170\\.2)"
+  targets: ["body"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-023"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 023 in headers"
+  pattern: "(?i)(?:100\\.100\\.100\\.200|169\\.254\\.170\\.2)"
+  targets: ["headers"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-024"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 024 in path"
+  pattern: "(?i)(?:100\\.100\\.100\\.200|169\\.254\\.170\\.2)"
+  targets: ["path"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-025"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 025 in query"
+  pattern: "(?i)(?:10\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3})"
+  targets: ["query"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-026"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 026 in body"
+  pattern: "(?i)(?:10\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3})"
+  targets: ["body"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-027"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 027 in headers"
+  pattern: "(?i)(?:10\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3})"
+  targets: ["headers"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-028"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 028 in path"
+  pattern: "(?i)(?:10\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3})"
+  targets: ["path"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-029"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 029 in query"
+  pattern: "(?i)(?:192\\.168\\.[0-9]{1,3}\\.[0-9]{1,3})"
+  targets: ["query"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-030"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 030 in body"
+  pattern: "(?i)(?:192\\.168\\.[0-9]{1,3}\\.[0-9]{1,3})"
+  targets: ["body"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-031"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 031 in headers"
+  pattern: "(?i)(?:192\\.168\\.[0-9]{1,3}\\.[0-9]{1,3})"
+  targets: ["headers"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-032"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 032 in path"
+  pattern: "(?i)(?:192\\.168\\.[0-9]{1,3}\\.[0-9]{1,3})"
+  targets: ["path"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-033"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 033 in query"
+  pattern: "(?i)(?:172\\.(?:1[6-9]|2[0-9]|3[01])\\.[0-9]{1,3}\\.[0-9]{1,3})"
+  targets: ["query"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-034"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 034 in body"
+  pattern: "(?i)(?:172\\.(?:1[6-9]|2[0-9]|3[01])\\.[0-9]{1,3}\\.[0-9]{1,3})"
+  targets: ["body"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-035"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 035 in headers"
+  pattern: "(?i)(?:172\\.(?:1[6-9]|2[0-9]|3[01])\\.[0-9]{1,3}\\.[0-9]{1,3})"
+  targets: ["headers"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-036"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 036 in path"
+  pattern: "(?i)(?:172\\.(?:1[6-9]|2[0-9]|3[01])\\.[0-9]{1,3}\\.[0-9]{1,3})"
+  targets: ["path"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-037"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 037 in query"
+  pattern: "(?i)(?:http://\\[?::ffff:127\\.0\\.0\\.1)"
+  targets: ["query"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-038"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 038 in body"
+  pattern: "(?i)(?:http://\\[?::ffff:127\\.0\\.0\\.1)"
+  targets: ["body"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-039"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 039 in headers"
+  pattern: "(?i)(?:http://\\[?::ffff:127\\.0\\.0\\.1)"
+  targets: ["headers"]
+  action: "block"
+  tags: ["ssrf"]
+- id: "ssrf-040"
+  category: "ssrf"
+  severity: "high"
+  description: "SSRF signature 040 in path"
+  pattern: "(?i)(?:http://\\[?::ffff:127\\.0\\.0\\.1)"
+  targets: ["path"]
+  action: "block"
+  tags: ["ssrf"]

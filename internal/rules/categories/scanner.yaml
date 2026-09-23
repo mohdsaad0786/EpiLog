@@ -1,0 +1,480 @@
+- id: "scanner-001"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 001 in path"
+  pattern: "(?i)(?:sqlmap|nikto|nmap|masscan)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-002"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 002 in user_agent"
+  pattern: "(?i)(?:sqlmap|nikto|nmap|masscan)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-003"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 003 in headers"
+  pattern: "(?i)(?:sqlmap|nikto|nmap|masscan)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-004"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 004 in path"
+  pattern: "(?i)(?:nuclei|acunetix|nessus|openvas)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-005"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 005 in user_agent"
+  pattern: "(?i)(?:nuclei|acunetix|nessus|openvas)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-006"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 006 in headers"
+  pattern: "(?i)(?:nuclei|acunetix|nessus|openvas)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-007"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 007 in path"
+  pattern: "(?i)(?:wpscan|dirbuster|gobuster|ffuf)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-008"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 008 in user_agent"
+  pattern: "(?i)(?:wpscan|dirbuster|gobuster|ffuf)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-009"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 009 in headers"
+  pattern: "(?i)(?:wpscan|dirbuster|gobuster|ffuf)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-010"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 010 in path"
+  pattern: "(?i)(?:\\.git/config|\\.git/HEAD)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-011"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 011 in user_agent"
+  pattern: "(?i)(?:\\.git/config|\\.git/HEAD)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-012"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 012 in headers"
+  pattern: "(?i)(?:\\.git/config|\\.git/HEAD)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-013"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 013 in path"
+  pattern: "(?i)(?:/\\.env(?:\\.|$)|/\\.aws/credentials)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-014"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 014 in user_agent"
+  pattern: "(?i)(?:/\\.env(?:\\.|$)|/\\.aws/credentials)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-015"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 015 in headers"
+  pattern: "(?i)(?:/\\.env(?:\\.|$)|/\\.aws/credentials)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-016"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 016 in path"
+  pattern: "(?i)(?:/wp-config\\.php|/xmlrpc\\.php)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-017"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 017 in user_agent"
+  pattern: "(?i)(?:/wp-config\\.php|/xmlrpc\\.php)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-018"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 018 in headers"
+  pattern: "(?i)(?:/wp-config\\.php|/xmlrpc\\.php)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-019"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 019 in path"
+  pattern: "(?i)(?:/phpinfo\\.php|/server-status)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-020"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 020 in user_agent"
+  pattern: "(?i)(?:/phpinfo\\.php|/server-status)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-021"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 021 in headers"
+  pattern: "(?i)(?:/phpinfo\\.php|/server-status)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-022"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 022 in path"
+  pattern: "(?i)(?:/actuator/(?:env|health|beans))"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-023"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 023 in user_agent"
+  pattern: "(?i)(?:/actuator/(?:env|health|beans))"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-024"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 024 in headers"
+  pattern: "(?i)(?:/actuator/(?:env|health|beans))"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-025"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 025 in path"
+  pattern: "(?i)(?:/cgi-bin/|/vendor/phpunit/)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-026"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 026 in user_agent"
+  pattern: "(?i)(?:/cgi-bin/|/vendor/phpunit/)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-027"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 027 in headers"
+  pattern: "(?i)(?:/cgi-bin/|/vendor/phpunit/)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-028"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 028 in path"
+  pattern: "(?i)(?:/\\.svn/entries|/\\.hg/store)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-029"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 029 in user_agent"
+  pattern: "(?i)(?:/\\.svn/entries|/\\.hg/store)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-030"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 030 in headers"
+  pattern: "(?i)(?:/\\.svn/entries|/\\.hg/store)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-031"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 031 in path"
+  pattern: "(?i)(?:/owa/auth/|/autodiscover/)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-032"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 032 in user_agent"
+  pattern: "(?i)(?:/owa/auth/|/autodiscover/)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-033"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 033 in headers"
+  pattern: "(?i)(?:/owa/auth/|/autodiscover/)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-034"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 034 in path"
+  pattern: "(?i)(?:/console/login|/jmx-console/)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-035"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 035 in user_agent"
+  pattern: "(?i)(?:/console/login|/jmx-console/)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-036"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 036 in headers"
+  pattern: "(?i)(?:/console/login|/jmx-console/)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-037"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 037 in path"
+  pattern: "(?i)(?:/swagger-ui|/api-docs)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-038"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 038 in user_agent"
+  pattern: "(?i)(?:/swagger-ui|/api-docs)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-039"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 039 in headers"
+  pattern: "(?i)(?:/swagger-ui|/api-docs)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-040"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 040 in path"
+  pattern: "(?i)(?:/solr/admin|/manager/html)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-041"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 041 in user_agent"
+  pattern: "(?i)(?:/solr/admin|/manager/html)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-042"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 042 in headers"
+  pattern: "(?i)(?:/solr/admin|/manager/html)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-043"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 043 in path"
+  pattern: "(?i)(?:/debug/pprof|/metrics$)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-044"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 044 in user_agent"
+  pattern: "(?i)(?:/debug/pprof|/metrics$)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-045"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 045 in headers"
+  pattern: "(?i)(?:/debug/pprof|/metrics$)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-046"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 046 in path"
+  pattern: "(?i)(?:/HNAP1/|/boaform/)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-047"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 047 in user_agent"
+  pattern: "(?i)(?:/HNAP1/|/boaform/)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-048"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 048 in headers"
+  pattern: "(?i)(?:/HNAP1/|/boaform/)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-049"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 049 in path"
+  pattern: "(?i)(?:/cgi-bin/luci|/shell\\?cd\\+)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-050"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 050 in user_agent"
+  pattern: "(?i)(?:/cgi-bin/luci|/shell\\?cd\\+)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-051"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 051 in headers"
+  pattern: "(?i)(?:/cgi-bin/luci|/shell\\?cd\\+)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-052"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 052 in path"
+  pattern: "(?i)(?:/\\.well-known/security\\.txt\\.bak)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-053"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 053 in user_agent"
+  pattern: "(?i)(?:/\\.well-known/security\\.txt\\.bak)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-054"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 054 in headers"
+  pattern: "(?i)(?:/\\.well-known/security\\.txt\\.bak)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-055"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 055 in path"
+  pattern: "(?i)(?:/adminer\\.php|/phpmyadmin/)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-056"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 056 in user_agent"
+  pattern: "(?i)(?:/adminer\\.php|/phpmyadmin/)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-057"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 057 in headers"
+  pattern: "(?i)(?:/adminer\\.php|/phpmyadmin/)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-058"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 058 in path"
+  pattern: "(?i)(?:/wp-json/wp/v2/users)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-059"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 059 in user_agent"
+  pattern: "(?i)(?:/wp-json/wp/v2/users)"
+  targets: ["user_agent"]
+  action: "challenge"
+  tags: ["scanner"]
+- id: "scanner-060"
+  category: "scanner"
+  severity: "medium"
+  description: "SCANNER signature 060 in headers"
+  pattern: "(?i)(?:/wp-json/wp/v2/users)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["scanner"]

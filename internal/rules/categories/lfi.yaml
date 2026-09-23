@@ -1,0 +1,400 @@
+- id: "lfi-001"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 001 in path"
+  pattern: "(?i)(?:\\.\\./){2,}"
+  targets: ["path"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-002"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 002 in query"
+  pattern: "(?i)(?:\\.\\./){2,}"
+  targets: ["query"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-003"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 003 in body"
+  pattern: "(?i)(?:\\.\\./){2,}"
+  targets: ["body"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-004"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 004 in headers"
+  pattern: "(?i)(?:\\.\\./){2,}"
+  targets: ["headers"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-005"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 005 in user_agent"
+  pattern: "(?i)(?:\\.\\./){2,}"
+  targets: ["user_agent"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-006"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 006 in path"
+  pattern: "(?i)(?:%2e%2e%2f){2,}"
+  targets: ["path"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-007"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 007 in query"
+  pattern: "(?i)(?:%2e%2e%2f){2,}"
+  targets: ["query"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-008"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 008 in body"
+  pattern: "(?i)(?:%2e%2e%2f){2,}"
+  targets: ["body"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-009"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 009 in headers"
+  pattern: "(?i)(?:%2e%2e%2f){2,}"
+  targets: ["headers"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-010"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 010 in user_agent"
+  pattern: "(?i)(?:%2e%2e%2f){2,}"
+  targets: ["user_agent"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-011"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 011 in path"
+  pattern: "(?i)(?:%252e%252e%252f){2,}"
+  targets: ["path"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-012"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 012 in query"
+  pattern: "(?i)(?:%252e%252e%252f){2,}"
+  targets: ["query"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-013"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 013 in body"
+  pattern: "(?i)(?:%252e%252e%252f){2,}"
+  targets: ["body"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-014"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 014 in headers"
+  pattern: "(?i)(?:%252e%252e%252f){2,}"
+  targets: ["headers"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-015"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 015 in user_agent"
+  pattern: "(?i)(?:%252e%252e%252f){2,}"
+  targets: ["user_agent"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-016"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 016 in path"
+  pattern: "(?i)(?:\\.\\.\\\\){2,}"
+  targets: ["path"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-017"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 017 in query"
+  pattern: "(?i)(?:\\.\\.\\\\){2,}"
+  targets: ["query"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-018"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 018 in body"
+  pattern: "(?i)(?:\\.\\.\\\\){2,}"
+  targets: ["body"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-019"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 019 in headers"
+  pattern: "(?i)(?:\\.\\.\\\\){2,}"
+  targets: ["headers"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-020"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 020 in user_agent"
+  pattern: "(?i)(?:\\.\\.\\\\){2,}"
+  targets: ["user_agent"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-021"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 021 in path"
+  pattern: "(?i)(?:%2e%2e%5c){2,}"
+  targets: ["path"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-022"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 022 in query"
+  pattern: "(?i)(?:%2e%2e%5c){2,}"
+  targets: ["query"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-023"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 023 in body"
+  pattern: "(?i)(?:%2e%2e%5c){2,}"
+  targets: ["body"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-024"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 024 in headers"
+  pattern: "(?i)(?:%2e%2e%5c){2,}"
+  targets: ["headers"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-025"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 025 in user_agent"
+  pattern: "(?i)(?:%2e%2e%5c){2,}"
+  targets: ["user_agent"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-026"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 026 in path"
+  pattern: "(?i)(?:/etc/passwd|/etc/shadow)\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-027"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 027 in query"
+  pattern: "(?i)(?:/etc/passwd|/etc/shadow)\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-028"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 028 in body"
+  pattern: "(?i)(?:/etc/passwd|/etc/shadow)\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-029"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 029 in headers"
+  pattern: "(?i)(?:/etc/passwd|/etc/shadow)\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-030"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 030 in user_agent"
+  pattern: "(?i)(?:/etc/passwd|/etc/shadow)\\b"
+  targets: ["user_agent"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-031"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 031 in path"
+  pattern: "(?i)(?:/proc/self/(?:environ|cmdline|fd/))"
+  targets: ["path"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-032"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 032 in query"
+  pattern: "(?i)(?:/proc/self/(?:environ|cmdline|fd/))"
+  targets: ["query"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-033"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 033 in body"
+  pattern: "(?i)(?:/proc/self/(?:environ|cmdline|fd/))"
+  targets: ["body"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-034"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 034 in headers"
+  pattern: "(?i)(?:/proc/self/(?:environ|cmdline|fd/))"
+  targets: ["headers"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-035"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 035 in user_agent"
+  pattern: "(?i)(?:/proc/self/(?:environ|cmdline|fd/))"
+  targets: ["user_agent"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-036"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 036 in path"
+  pattern: "(?i)(?:php://filter|file://|zip://|phar://)"
+  targets: ["path"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-037"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 037 in query"
+  pattern: "(?i)(?:php://filter|file://|zip://|phar://)"
+  targets: ["query"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-038"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 038 in body"
+  pattern: "(?i)(?:php://filter|file://|zip://|phar://)"
+  targets: ["body"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-039"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 039 in headers"
+  pattern: "(?i)(?:php://filter|file://|zip://|phar://)"
+  targets: ["headers"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-040"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 040 in user_agent"
+  pattern: "(?i)(?:php://filter|file://|zip://|phar://)"
+  targets: ["user_agent"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-041"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 041 in path"
+  pattern: "(?i)(?:boot\\.ini|win\\.ini|system32\\\\drivers)"
+  targets: ["path"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-042"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 042 in query"
+  pattern: "(?i)(?:boot\\.ini|win\\.ini|system32\\\\drivers)"
+  targets: ["query"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-043"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 043 in body"
+  pattern: "(?i)(?:boot\\.ini|win\\.ini|system32\\\\drivers)"
+  targets: ["body"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-044"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 044 in headers"
+  pattern: "(?i)(?:boot\\.ini|win\\.ini|system32\\\\drivers)"
+  targets: ["headers"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-045"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 045 in user_agent"
+  pattern: "(?i)(?:boot\\.ini|win\\.ini|system32\\\\drivers)"
+  targets: ["user_agent"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-046"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 046 in path"
+  pattern: "(?i)(?:%00|%2500).*(?:\\.php|\\.jsp)"
+  targets: ["path"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-047"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 047 in query"
+  pattern: "(?i)(?:%00|%2500).*(?:\\.php|\\.jsp)"
+  targets: ["query"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-048"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 048 in body"
+  pattern: "(?i)(?:%00|%2500).*(?:\\.php|\\.jsp)"
+  targets: ["body"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-049"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 049 in headers"
+  pattern: "(?i)(?:%00|%2500).*(?:\\.php|\\.jsp)"
+  targets: ["headers"]
+  action: "block"
+  tags: ["lfi"]
+- id: "lfi-050"
+  category: "lfi"
+  severity: "high"
+  description: "LFI signature 050 in user_agent"
+  pattern: "(?i)(?:%00|%2500).*(?:\\.php|\\.jsp)"
+  targets: ["user_agent"]
+  action: "block"
+  tags: ["lfi"]

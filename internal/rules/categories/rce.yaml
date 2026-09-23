@@ -1,0 +1,480 @@
+- id: "rce-001"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 001 in query"
+  pattern: "(?i)(?:;|\\|\\||&&)\\s*(?:id|whoami|uname|cat|curl|wget)\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-002"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 002 in body"
+  pattern: "(?i)(?:;|\\|\\||&&)\\s*(?:id|whoami|uname|cat|curl|wget)\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-003"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 003 in headers"
+  pattern: "(?i)(?:;|\\|\\||&&)\\s*(?:id|whoami|uname|cat|curl|wget)\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-004"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 004 in path"
+  pattern: "(?i)(?:;|\\|\\||&&)\\s*(?:id|whoami|uname|cat|curl|wget)\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-005"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 005 in query"
+  pattern: "(?i)\\$\\([^)]*(?:id|whoami|cat)\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-006"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 006 in body"
+  pattern: "(?i)\\$\\([^)]*(?:id|whoami|cat)\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-007"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 007 in headers"
+  pattern: "(?i)\\$\\([^)]*(?:id|whoami|cat)\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-008"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 008 in path"
+  pattern: "(?i)\\$\\([^)]*(?:id|whoami|cat)\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-009"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 009 in query"
+  pattern: "(?i)`[^`]*(?:id|whoami|cat)\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-010"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 010 in body"
+  pattern: "(?i)`[^`]*(?:id|whoami|cat)\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-011"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 011 in headers"
+  pattern: "(?i)`[^`]*(?:id|whoami|cat)\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-012"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 012 in path"
+  pattern: "(?i)`[^`]*(?:id|whoami|cat)\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-013"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 013 in query"
+  pattern: "(?i)(?:/bin/(?:sh|bash)|cmd\\.exe|powershell(?:\\.exe)?)\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-014"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 014 in body"
+  pattern: "(?i)(?:/bin/(?:sh|bash)|cmd\\.exe|powershell(?:\\.exe)?)\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-015"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 015 in headers"
+  pattern: "(?i)(?:/bin/(?:sh|bash)|cmd\\.exe|powershell(?:\\.exe)?)\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-016"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 016 in path"
+  pattern: "(?i)(?:/bin/(?:sh|bash)|cmd\\.exe|powershell(?:\\.exe)?)\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-017"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 017 in query"
+  pattern: "(?i)(?:system|exec|passthru|shell_exec)\\s*\\("
+  targets: ["query"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-018"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 018 in body"
+  pattern: "(?i)(?:system|exec|passthru|shell_exec)\\s*\\("
+  targets: ["body"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-019"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 019 in headers"
+  pattern: "(?i)(?:system|exec|passthru|shell_exec)\\s*\\("
+  targets: ["headers"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-020"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 020 in path"
+  pattern: "(?i)(?:system|exec|passthru|shell_exec)\\s*\\("
+  targets: ["path"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-021"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 021 in query"
+  pattern: "(?i)(?:eval|assert)\\s*\\([^)]*(?:base64|request|post)"
+  targets: ["query"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-022"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 022 in body"
+  pattern: "(?i)(?:eval|assert)\\s*\\([^)]*(?:base64|request|post)"
+  targets: ["body"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-023"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 023 in headers"
+  pattern: "(?i)(?:eval|assert)\\s*\\([^)]*(?:base64|request|post)"
+  targets: ["headers"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-024"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 024 in path"
+  pattern: "(?i)(?:eval|assert)\\s*\\([^)]*(?:base64|request|post)"
+  targets: ["path"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-025"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 025 in query"
+  pattern: "(?i)(?:Runtime\\.getRuntime|ProcessBuilder)\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-026"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 026 in body"
+  pattern: "(?i)(?:Runtime\\.getRuntime|ProcessBuilder)\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-027"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 027 in headers"
+  pattern: "(?i)(?:Runtime\\.getRuntime|ProcessBuilder)\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-028"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 028 in path"
+  pattern: "(?i)(?:Runtime\\.getRuntime|ProcessBuilder)\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-029"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 029 in query"
+  pattern: "(?i)(?:__import__|subprocess\\.Popen|os\\.system)\\s*\\("
+  targets: ["query"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-030"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 030 in body"
+  pattern: "(?i)(?:__import__|subprocess\\.Popen|os\\.system)\\s*\\("
+  targets: ["body"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-031"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 031 in headers"
+  pattern: "(?i)(?:__import__|subprocess\\.Popen|os\\.system)\\s*\\("
+  targets: ["headers"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-032"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 032 in path"
+  pattern: "(?i)(?:__import__|subprocess\\.Popen|os\\.system)\\s*\\("
+  targets: ["path"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-033"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 033 in query"
+  pattern: "(?i)(?:pickle\\.loads|yaml\\.unsafe_load)\\s*\\("
+  targets: ["query"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-034"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 034 in body"
+  pattern: "(?i)(?:pickle\\.loads|yaml\\.unsafe_load)\\s*\\("
+  targets: ["body"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-035"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 035 in headers"
+  pattern: "(?i)(?:pickle\\.loads|yaml\\.unsafe_load)\\s*\\("
+  targets: ["headers"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-036"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 036 in path"
+  pattern: "(?i)(?:pickle\\.loads|yaml\\.unsafe_load)\\s*\\("
+  targets: ["path"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-037"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 037 in query"
+  pattern: "(?i)(?:ObjectInputStream|readObject\\s*\\()"
+  targets: ["query"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-038"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 038 in body"
+  pattern: "(?i)(?:ObjectInputStream|readObject\\s*\\()"
+  targets: ["body"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-039"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 039 in headers"
+  pattern: "(?i)(?:ObjectInputStream|readObject\\s*\\()"
+  targets: ["headers"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-040"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 040 in path"
+  pattern: "(?i)(?:ObjectInputStream|readObject\\s*\\()"
+  targets: ["path"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-041"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 041 in query"
+  pattern: "(?i)(?:/dev/tcp/|nc\\s+-e\\s+)"
+  targets: ["query"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-042"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 042 in body"
+  pattern: "(?i)(?:/dev/tcp/|nc\\s+-e\\s+)"
+  targets: ["body"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-043"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 043 in headers"
+  pattern: "(?i)(?:/dev/tcp/|nc\\s+-e\\s+)"
+  targets: ["headers"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-044"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 044 in path"
+  pattern: "(?i)(?:/dev/tcp/|nc\\s+-e\\s+)"
+  targets: ["path"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-045"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 045 in query"
+  pattern: "(?i)(?:base64\\s+-d\\s*\\||base64_decode\\s*\\()"
+  targets: ["query"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-046"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 046 in body"
+  pattern: "(?i)(?:base64\\s+-d\\s*\\||base64_decode\\s*\\()"
+  targets: ["body"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-047"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 047 in headers"
+  pattern: "(?i)(?:base64\\s+-d\\s*\\||base64_decode\\s*\\()"
+  targets: ["headers"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-048"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 048 in path"
+  pattern: "(?i)(?:base64\\s+-d\\s*\\||base64_decode\\s*\\()"
+  targets: ["path"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-049"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 049 in query"
+  pattern: "(?i)(?:\\$\\{jndi:|\\$\\{lower:)\\b?"
+  targets: ["query"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-050"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 050 in body"
+  pattern: "(?i)(?:\\$\\{jndi:|\\$\\{lower:)\\b?"
+  targets: ["body"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-051"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 051 in headers"
+  pattern: "(?i)(?:\\$\\{jndi:|\\$\\{lower:)\\b?"
+  targets: ["headers"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-052"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 052 in path"
+  pattern: "(?i)(?:\\$\\{jndi:|\\$\\{lower:)\\b?"
+  targets: ["path"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-053"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 053 in query"
+  pattern: "(?i)(?:php://input|expect://)\\b?"
+  targets: ["query"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-054"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 054 in body"
+  pattern: "(?i)(?:php://input|expect://)\\b?"
+  targets: ["body"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-055"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 055 in headers"
+  pattern: "(?i)(?:php://input|expect://)\\b?"
+  targets: ["headers"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-056"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 056 in path"
+  pattern: "(?i)(?:php://input|expect://)\\b?"
+  targets: ["path"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-057"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 057 in query"
+  pattern: "(?i)(?:chmod\\s+\\+x|curl\\s+[^;|]+\\|\\s*(?:sh|bash))"
+  targets: ["query"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-058"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 058 in body"
+  pattern: "(?i)(?:chmod\\s+\\+x|curl\\s+[^;|]+\\|\\s*(?:sh|bash))"
+  targets: ["body"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-059"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 059 in headers"
+  pattern: "(?i)(?:chmod\\s+\\+x|curl\\s+[^;|]+\\|\\s*(?:sh|bash))"
+  targets: ["headers"]
+  action: "block"
+  tags: ["rce"]
+- id: "rce-060"
+  category: "rce"
+  severity: "critical"
+  description: "RCE signature 060 in path"
+  pattern: "(?i)(?:chmod\\s+\\+x|curl\\s+[^;|]+\\|\\s*(?:sh|bash))"
+  targets: ["path"]
+  action: "block"
+  tags: ["rce"]

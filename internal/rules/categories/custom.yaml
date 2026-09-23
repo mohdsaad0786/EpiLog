@@ -1,0 +1,320 @@
+- id: "custom-001"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 001 in path"
+  pattern: "(?i)(?:/admin(?:/|$)|/administrator/)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-002"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 002 in query"
+  pattern: "(?i)(?:/admin(?:/|$)|/administrator/)"
+  targets: ["query"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-003"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 003 in headers"
+  pattern: "(?i)(?:/admin(?:/|$)|/administrator/)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-004"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 004 in body"
+  pattern: "(?i)(?:/admin(?:/|$)|/administrator/)"
+  targets: ["body"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-005"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 005 in path"
+  pattern: "(?i)(?:/wp-admin/|/wp-login\\.php)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-006"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 006 in query"
+  pattern: "(?i)(?:/wp-admin/|/wp-login\\.php)"
+  targets: ["query"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-007"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 007 in headers"
+  pattern: "(?i)(?:/wp-admin/|/wp-login\\.php)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-008"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 008 in body"
+  pattern: "(?i)(?:/wp-admin/|/wp-login\\.php)"
+  targets: ["body"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-009"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 009 in path"
+  pattern: "(?i)(?:/backup\\.(?:zip|tar|sql)|/db\\.sql)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-010"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 010 in query"
+  pattern: "(?i)(?:/backup\\.(?:zip|tar|sql)|/db\\.sql)"
+  targets: ["query"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-011"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 011 in headers"
+  pattern: "(?i)(?:/backup\\.(?:zip|tar|sql)|/db\\.sql)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-012"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 012 in body"
+  pattern: "(?i)(?:/backup\\.(?:zip|tar|sql)|/db\\.sql)"
+  targets: ["body"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-013"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 013 in path"
+  pattern: "(?i)(?:/\\.DS_Store|/Thumbs\\.db)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-014"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 014 in query"
+  pattern: "(?i)(?:/\\.DS_Store|/Thumbs\\.db)"
+  targets: ["query"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-015"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 015 in headers"
+  pattern: "(?i)(?:/\\.DS_Store|/Thumbs\\.db)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-016"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 016 in body"
+  pattern: "(?i)(?:/\\.DS_Store|/Thumbs\\.db)"
+  targets: ["body"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-017"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 017 in path"
+  pattern: "(?i)(?:/config\\.(?:json|yml|yaml|php)\\.bak)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-018"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 018 in query"
+  pattern: "(?i)(?:/config\\.(?:json|yml|yaml|php)\\.bak)"
+  targets: ["query"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-019"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 019 in headers"
+  pattern: "(?i)(?:/config\\.(?:json|yml|yaml|php)\\.bak)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-020"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 020 in body"
+  pattern: "(?i)(?:/config\\.(?:json|yml|yaml|php)\\.bak)"
+  targets: ["body"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-021"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 021 in path"
+  pattern: "(?i)(?:/id_rsa|/\\.ssh/)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-022"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 022 in query"
+  pattern: "(?i)(?:/id_rsa|/\\.ssh/)"
+  targets: ["query"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-023"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 023 in headers"
+  pattern: "(?i)(?:/id_rsa|/\\.ssh/)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-024"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 024 in body"
+  pattern: "(?i)(?:/id_rsa|/\\.ssh/)"
+  targets: ["body"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-025"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 025 in path"
+  pattern: "(?i)(?:/\\.npmrc|/\\.pypirc)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-026"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 026 in query"
+  pattern: "(?i)(?:/\\.npmrc|/\\.pypirc)"
+  targets: ["query"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-027"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 027 in headers"
+  pattern: "(?i)(?:/\\.npmrc|/\\.pypirc)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-028"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 028 in body"
+  pattern: "(?i)(?:/\\.npmrc|/\\.pypirc)"
+  targets: ["body"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-029"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 029 in path"
+  pattern: "(?i)(?:/web\\.config\\.bak|/application\\.properties)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-030"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 030 in query"
+  pattern: "(?i)(?:/web\\.config\\.bak|/application\\.properties)"
+  targets: ["query"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-031"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 031 in headers"
+  pattern: "(?i)(?:/web\\.config\\.bak|/application\\.properties)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-032"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 032 in body"
+  pattern: "(?i)(?:/web\\.config\\.bak|/application\\.properties)"
+  targets: ["body"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-033"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 033 in path"
+  pattern: "(?i)(?:/secrets\\.json|/credentials\\.json)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-034"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 034 in query"
+  pattern: "(?i)(?:/secrets\\.json|/credentials\\.json)"
+  targets: ["query"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-035"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 035 in headers"
+  pattern: "(?i)(?:/secrets\\.json|/credentials\\.json)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-036"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 036 in body"
+  pattern: "(?i)(?:/secrets\\.json|/credentials\\.json)"
+  targets: ["body"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-037"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 037 in path"
+  pattern: "(?i)(?:/admin/login|/api/internal/)"
+  targets: ["path"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-038"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 038 in query"
+  pattern: "(?i)(?:/admin/login|/api/internal/)"
+  targets: ["query"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-039"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 039 in headers"
+  pattern: "(?i)(?:/admin/login|/api/internal/)"
+  targets: ["headers"]
+  action: "challenge"
+  tags: ["custom"]
+- id: "custom-040"
+  category: "custom"
+  severity: "medium"
+  description: "CUSTOM signature 040 in body"
+  pattern: "(?i)(?:/admin/login|/api/internal/)"
+  targets: ["body"]
+  action: "challenge"
+  tags: ["custom"]

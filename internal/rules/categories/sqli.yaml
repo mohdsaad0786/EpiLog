@@ -1,0 +1,800 @@
+- id: "sqli-001"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 001 in query"
+  pattern: "(?i)union\\s+(?:all\\s+)?select"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-002"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 002 in body"
+  pattern: "(?i)union\\s+(?:all\\s+)?select"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-003"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 003 in headers"
+  pattern: "(?i)union\\s+(?:all\\s+)?select"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-004"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 004 in path"
+  pattern: "(?i)union\\s+(?:all\\s+)?select"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-005"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 005 in query"
+  pattern: "(?i)(?:or|and)\\s+['\\\"]?\\d+['\\\"]?\\s*=\\s*['\\\"]?\\d+"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-006"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 006 in body"
+  pattern: "(?i)(?:or|and)\\s+['\\\"]?\\d+['\\\"]?\\s*=\\s*['\\\"]?\\d+"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-007"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 007 in headers"
+  pattern: "(?i)(?:or|and)\\s+['\\\"]?\\d+['\\\"]?\\s*=\\s*['\\\"]?\\d+"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-008"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 008 in path"
+  pattern: "(?i)(?:or|and)\\s+['\\\"]?\\d+['\\\"]?\\s*=\\s*['\\\"]?\\d+"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-009"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 009 in query"
+  pattern: "(?i)(?:or|and)\\s+['\\\"]?[a-z]+['\\\"]?\\s*=\\s*['\\\"]?[a-z]+"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-010"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 010 in body"
+  pattern: "(?i)(?:or|and)\\s+['\\\"]?[a-z]+['\\\"]?\\s*=\\s*['\\\"]?[a-z]+"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-011"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 011 in headers"
+  pattern: "(?i)(?:or|and)\\s+['\\\"]?[a-z]+['\\\"]?\\s*=\\s*['\\\"]?[a-z]+"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-012"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 012 in path"
+  pattern: "(?i)(?:or|and)\\s+['\\\"]?[a-z]+['\\\"]?\\s*=\\s*['\\\"]?[a-z]+"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-013"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 013 in query"
+  pattern: "(?i)information_schema\\."
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-014"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 014 in body"
+  pattern: "(?i)information_schema\\."
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-015"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 015 in headers"
+  pattern: "(?i)information_schema\\."
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-016"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 016 in path"
+  pattern: "(?i)information_schema\\."
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-017"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 017 in query"
+  pattern: "(?i)(?:sleep|benchmark)\\s*\\("
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-018"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 018 in body"
+  pattern: "(?i)(?:sleep|benchmark)\\s*\\("
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-019"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 019 in headers"
+  pattern: "(?i)(?:sleep|benchmark)\\s*\\("
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-020"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 020 in path"
+  pattern: "(?i)(?:sleep|benchmark)\\s*\\("
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-021"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 021 in query"
+  pattern: "(?i)waitfor\\s+delay"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-022"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 022 in body"
+  pattern: "(?i)waitfor\\s+delay"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-023"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 023 in headers"
+  pattern: "(?i)waitfor\\s+delay"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-024"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 024 in path"
+  pattern: "(?i)waitfor\\s+delay"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-025"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 025 in query"
+  pattern: "(?i)pg_sleep\\s*\\("
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-026"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 026 in body"
+  pattern: "(?i)pg_sleep\\s*\\("
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-027"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 027 in headers"
+  pattern: "(?i)pg_sleep\\s*\\("
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-028"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 028 in path"
+  pattern: "(?i)pg_sleep\\s*\\("
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-029"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 029 in query"
+  pattern: "(?i)dbms_pipe\\.receive_message"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-030"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 030 in body"
+  pattern: "(?i)dbms_pipe\\.receive_message"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-031"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 031 in headers"
+  pattern: "(?i)dbms_pipe\\.receive_message"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-032"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 032 in path"
+  pattern: "(?i)dbms_pipe\\.receive_message"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-033"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 033 in query"
+  pattern: "(?i)extractvalue\\s*\\("
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-034"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 034 in body"
+  pattern: "(?i)extractvalue\\s*\\("
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-035"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 035 in headers"
+  pattern: "(?i)extractvalue\\s*\\("
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-036"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 036 in path"
+  pattern: "(?i)extractvalue\\s*\\("
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-037"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 037 in query"
+  pattern: "(?i)updatexml\\s*\\("
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-038"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 038 in body"
+  pattern: "(?i)updatexml\\s*\\("
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-039"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 039 in headers"
+  pattern: "(?i)updatexml\\s*\\("
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-040"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 040 in path"
+  pattern: "(?i)updatexml\\s*\\("
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-041"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 041 in query"
+  pattern: "(?i)(?:load_file|into\\s+outfile)\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-042"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 042 in body"
+  pattern: "(?i)(?:load_file|into\\s+outfile)\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-043"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 043 in headers"
+  pattern: "(?i)(?:load_file|into\\s+outfile)\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-044"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 044 in path"
+  pattern: "(?i)(?:load_file|into\\s+outfile)\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-045"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 045 in query"
+  pattern: "(?i)(?:xp_cmdshell|sp_executesql)\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-046"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 046 in body"
+  pattern: "(?i)(?:xp_cmdshell|sp_executesql)\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-047"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 047 in headers"
+  pattern: "(?i)(?:xp_cmdshell|sp_executesql)\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-048"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 048 in path"
+  pattern: "(?i)(?:xp_cmdshell|sp_executesql)\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-049"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 049 in query"
+  pattern: "(?i)(?:select|insert|update|delete)\\s+.+(?:--|#|/\\*)"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-050"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 050 in body"
+  pattern: "(?i)(?:select|insert|update|delete)\\s+.+(?:--|#|/\\*)"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-051"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 051 in headers"
+  pattern: "(?i)(?:select|insert|update|delete)\\s+.+(?:--|#|/\\*)"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-052"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 052 in path"
+  pattern: "(?i)(?:select|insert|update|delete)\\s+.+(?:--|#|/\\*)"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-053"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 053 in query"
+  pattern: "(?i)(?:select|union)\\s+.*\\bfrom\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-054"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 054 in body"
+  pattern: "(?i)(?:select|union)\\s+.*\\bfrom\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-055"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 055 in headers"
+  pattern: "(?i)(?:select|union)\\s+.*\\bfrom\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-056"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 056 in path"
+  pattern: "(?i)(?:select|union)\\s+.*\\bfrom\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-057"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 057 in query"
+  pattern: "(?i)(?:drop|truncate|alter)\\s+table\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-058"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 058 in body"
+  pattern: "(?i)(?:drop|truncate|alter)\\s+table\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-059"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 059 in headers"
+  pattern: "(?i)(?:drop|truncate|alter)\\s+table\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-060"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 060 in path"
+  pattern: "(?i)(?:drop|truncate|alter)\\s+table\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-061"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 061 in query"
+  pattern: "(?i)(?:cast|convert)\\s*\\(.+\\bas\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-062"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 062 in body"
+  pattern: "(?i)(?:cast|convert)\\s*\\(.+\\bas\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-063"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 063 in headers"
+  pattern: "(?i)(?:cast|convert)\\s*\\(.+\\bas\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-064"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 064 in path"
+  pattern: "(?i)(?:cast|convert)\\s*\\(.+\\bas\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-065"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 065 in query"
+  pattern: "(?i)(?:hex|char|unhex)\\s*\\("
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-066"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 066 in body"
+  pattern: "(?i)(?:hex|char|unhex)\\s*\\("
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-067"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 067 in headers"
+  pattern: "(?i)(?:hex|char|unhex)\\s*\\("
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-068"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 068 in path"
+  pattern: "(?i)(?:hex|char|unhex)\\s*\\("
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-069"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 069 in query"
+  pattern: "(?i)(?:sysobjects|syscolumns|pg_catalog)\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-070"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 070 in body"
+  pattern: "(?i)(?:sysobjects|syscolumns|pg_catalog)\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-071"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 071 in headers"
+  pattern: "(?i)(?:sysobjects|syscolumns|pg_catalog)\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-072"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 072 in path"
+  pattern: "(?i)(?:sysobjects|syscolumns|pg_catalog)\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-073"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 073 in query"
+  pattern: "(?i)(?:sqlite_master|sqlite_schema)\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-074"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 074 in body"
+  pattern: "(?i)(?:sqlite_master|sqlite_schema)\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-075"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 075 in headers"
+  pattern: "(?i)(?:sqlite_master|sqlite_schema)\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-076"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 076 in path"
+  pattern: "(?i)(?:sqlite_master|sqlite_schema)\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-077"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 077 in query"
+  pattern: "(?i)(?:having\\s+\\d+\\s*=|group\\s+by\\s+\\d+)\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-078"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 078 in body"
+  pattern: "(?i)(?:having\\s+\\d+\\s*=|group\\s+by\\s+\\d+)\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-079"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 079 in headers"
+  pattern: "(?i)(?:having\\s+\\d+\\s*=|group\\s+by\\s+\\d+)\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-080"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 080 in path"
+  pattern: "(?i)(?:having\\s+\\d+\\s*=|group\\s+by\\s+\\d+)\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-081"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 081 in query"
+  pattern: "(?i)(?:order\\s+by\\s+\\d{2,})\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-082"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 082 in body"
+  pattern: "(?i)(?:order\\s+by\\s+\\d{2,})\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-083"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 083 in headers"
+  pattern: "(?i)(?:order\\s+by\\s+\\d{2,})\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-084"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 084 in path"
+  pattern: "(?i)(?:order\\s+by\\s+\\d{2,})\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-085"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 085 in query"
+  pattern: "(?i)(?:@@version|version\\s*\\(\\s*\\))"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-086"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 086 in body"
+  pattern: "(?i)(?:@@version|version\\s*\\(\\s*\\))"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-087"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 087 in headers"
+  pattern: "(?i)(?:@@version|version\\s*\\(\\s*\\))"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-088"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 088 in path"
+  pattern: "(?i)(?:@@version|version\\s*\\(\\s*\\))"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-089"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 089 in query"
+  pattern: "(?i)(?:user|database|current_user)\\s*\\(\\s*\\)"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-090"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 090 in body"
+  pattern: "(?i)(?:user|database|current_user)\\s*\\(\\s*\\)"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-091"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 091 in headers"
+  pattern: "(?i)(?:user|database|current_user)\\s*\\(\\s*\\)"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-092"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 092 in path"
+  pattern: "(?i)(?:user|database|current_user)\\s*\\(\\s*\\)"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-093"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 093 in query"
+  pattern: "(?i)(?:procedure\\s+analyse|into\\s+dumpfile)\\b"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-094"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 094 in body"
+  pattern: "(?i)(?:procedure\\s+analyse|into\\s+dumpfile)\\b"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-095"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 095 in headers"
+  pattern: "(?i)(?:procedure\\s+analyse|into\\s+dumpfile)\\b"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-096"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 096 in path"
+  pattern: "(?i)(?:procedure\\s+analyse|into\\s+dumpfile)\\b"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-097"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 097 in query"
+  pattern: "(?i)(?:0x[0-9a-f]{8,}\\s*=|\\bconcat_ws\\s*\\()"
+  targets: ["query"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-098"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 098 in body"
+  pattern: "(?i)(?:0x[0-9a-f]{8,}\\s*=|\\bconcat_ws\\s*\\()"
+  targets: ["body"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-099"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 099 in headers"
+  pattern: "(?i)(?:0x[0-9a-f]{8,}\\s*=|\\bconcat_ws\\s*\\()"
+  targets: ["headers"]
+  action: "block"
+  tags: ["owasp-a03"]
+- id: "sqli-100"
+  category: "sqli"
+  severity: "critical"
+  description: "SQLI signature 100 in path"
+  pattern: "(?i)(?:0x[0-9a-f]{8,}\\s*=|\\bconcat_ws\\s*\\()"
+  targets: ["path"]
+  action: "block"
+  tags: ["owasp-a03"]
